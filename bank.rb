@@ -1,10 +1,10 @@
-p = 7
-q = 11
+p = 191
+q = 839
 n = p * q
 e = 13
 d = 1
 i = 1
-tal = 73
+tal = 17756
 
 while ((((p-1)*(q-1)) * i) + 1) % (e * d) != 0
     if (e * d) > ((((p-1)*(q-1)) * i) + 1)
@@ -15,12 +15,9 @@ while ((((p-1)*(q-1)) * i) + 1) % (e * d) != 0
     
 end
 
-secret = ((tal^d) % n)
-# SECRET VISAR FEL SVAR!! SVARET SKALL VARA 73^37 (MOD 77) = 17
-# ALLT ANNAT STÄMMER!!!
+secret = ((tal**d) % n)
 
 
 p d
 p i
 p secret
-481
