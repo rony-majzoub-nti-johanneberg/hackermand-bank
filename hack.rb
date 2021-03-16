@@ -1,19 +1,38 @@
 n = 160249
 e = 13
 tal = 17756
+d = 1
+i = 1
 
-
-
-array.each do |n|
-    is_prime = true
-    while new_count < n 
-        if n % new_count == 0
-            is_prime = false
+def prime(input)
+    i = 2
+    while i < input - 1
+        if (input) % i == 0
+            return i
         end
-        new_count += 1
+        i +=1
     end
-    new_count = 2
-    primes = n if is_prime and n > primes
+    return "detta är ett primtal"
 end
 
-p primes
+p = prime(n)
+q = (n / p)
+
+
+while ((((p-1)*(q-1)) * i) + 1) % (e * d) != 0
+    if (e * d) > ((((p-1)*(q-1)) * i) + 1)
+        i += 1
+    else
+        d += 1
+    end
+    
+end
+
+secret = ((tal**d) % n)
+
+
+puts "p är #{p}"
+puts "q är #{q}"
+puts "d är #{d}"
+puts "i är #{i}"
+puts "det hemliga talet är #{secret}"

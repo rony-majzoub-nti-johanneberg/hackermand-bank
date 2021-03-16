@@ -18,6 +18,6 @@ end
 secret = ((tal**d) % n)
 
 
-p d
-p i
-p secret
+puts "d är #{d}"
+puts "i är #{i}"
+puts "det hemliga talet är #{secret}"
